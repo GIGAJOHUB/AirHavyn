@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dubai’s Premier Airbnb & Short-Term Rental Services. No Contracts. No Revenue Sharing. Book now!" />
-  <title>Dubai Airbnb Hosting Services | No Contracts, On-Demand</title>
+  <meta name="description" content="Boost bookings with Dubai’s best cleaning, linen & guest-ready services for Airbnb, vacation rentals & serviced apartments. No contracts. Book now." />
+  <title>Airbnb & Short-Term Rental Services in Dubai | Trusted, On-Demand</title>
   <link rel="stylesheet" href="/styles.css">
   <script defer src="/main.js"></script>
   <style>
@@ -22,6 +22,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .logo {
       font-family: 'Trebuchet MS', sans-serif;
@@ -96,6 +99,8 @@
     .hero p {
       font-size: 1.2rem;
       color: #555;
+      max-width: 800px;
+      margin: 1rem auto;
     }
     .slideshow {
       max-width: 100%;
@@ -147,6 +152,50 @@
     .footer-links a:hover {
       text-decoration: underline;
     }
+    .trust-badges {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .trust-badges .badge {
+      background-color: #7db3e7;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .social-links {
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: #7db3e7;
+      margin: 0 0.5rem;
+      font-size: 1.2rem;
+    }
+    .comparison-table {
+      max-width: 800px;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .comparison-table th, .comparison-table td {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: left;
+    }
+    .comparison-table th {
+      background-color: #1e2a38;
+      color: white;
+    }
+    .no-revenue {
+      background-color: #337ab7;
+      color: white;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
@@ -162,7 +211,7 @@
       </ul>
       <div class="cta-buttons">
         <a href="#book" class="btn primary">Book Now</a>
-        <a href="quote.html" class="btn secondary">Get a Quote</a>
+        <a href="#quote" class="btn secondary">Get a Custom Quote</a>
       </div>
     </nav>
   </header>
@@ -170,7 +219,8 @@
   <section id="home" class="hero">
     <div class="hero-text">
       <h1>Dubai’s Premier Short-Term Rental Service Partner</h1>
-      <p>Seamless hosting solutions for Airbnb hosts, vacation rentals, and serviced apartments. No contracts. No revenue sharing.</p>
+      <p>Seamless hosting solutions for Airbnb hosts, vacation rentals, boutique hotels, and serviced apartments. No contracts. No revenue sharing. Just expert support on demand.</p>
+      <div class="no-revenue">No Revenue Share • No Contracts • On-Demand Only</div>
       <a href="#services" class="btn primary">View Services</a>
       <a href="#book" class="btn secondary">Book Now</a>
     </div>
@@ -179,75 +229,225 @@
     </div>
   </section>
 
+  <section id="why-choose-us" style="padding: 4rem 2rem; text-align: center; background-color: #ffffff;">
+    <h2>Why Choose Us</h2>
+    <p>Tired of sharing 15-30% of your revenue with Property Managers? With AirHavyn, you keep 100% of your revenue—only pay for the services you need.</p>
+    <ul style="list-style: none; padding: 0; max-width: 800px; margin: 1rem auto; text-align: left;">
+      <li><strong>No Revenue Sharing</strong> – You earn more, we stay out of your profits</li>
+      <li><strong>No Lock-In Contracts</strong> – Book what you need, when you need it</li>
+      <li><strong>End-to-End Support</strong> – Cleaning, check-ins, maintenance, guest care</li>
+      <li><strong>Trusted Service Providers</strong> – Vetted professionals, top-rated quality</li>
+      <li><strong>Scales With You</strong> – From one unit to full portfolios</li>
+      <li><strong>Simple Online Management</strong> – Book, pay, and track everything online</li>
+    </ul>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Traditional Property Management</th>
+          <th>AirHavyn</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue Sharing</td>
+          <td>15-30% of your earnings</td>
+          <td><strong>0%</strong> – Keep all your profits</td>
+        </tr>
+        <tr>
+          <td>Contracts</td>
+          <td>Long-term commitments</td>
+          <td><strong>No contracts</strong> – Pay-as-you-go</td>
+        </tr>
+        <tr>
+          <td>Service Flexibility</td>
+          <td>Limited, bundled services</td>
+          <td><strong>Fully customizable</strong> – Choose only what you need</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#services" class="btn primary">View Services</a>
+    <a href="#book" class="btn secondary">Book Now</a>
+  </section>
+
+  <section id="testimonials" style="padding: 4rem 2rem; background-color: #f0f5fb; text-align: center;">
+    <h2>What Hosts Say</h2>
+    <div class="service-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div class="card">
+        <p>“Saved me 10+ hours weekly—truly seamless.”</p>
+        <p><strong>– Dubai Superhost</strong></p>
+      </div>
+      <div class="card">
+        <p>“Flawless turnovers & 5-star reviews, every time.”</p>
+        <p><strong>– Luxury Airbnb Owner</strong></p>
+      </div>
+    </div>
+  </section>
+
   <section id="services" class="services-preview" style="padding: 4rem 2rem;">
     <h2 style="text-align: center;">Effortless Hosting, On Demand</h2>
+    <p style="text-align: center; max-width: 800px; margin: 1rem auto;">From cleaning to guest check-ins, smart locks to linens and laundry—our fully managed services help you host like a pro. No contracts. No hidden fees.</p>
     <div class="service-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
       <div class="card">
         <h3>Airbnb Cleaning & Turnover</h3>
-        <p>5-star cleaning, restocking essentials, guest-ready staging.</p>
+        <p>Starting at AED 150 per booking</p>
+        <p>5-star cleaning, disinfection, guest essentials restocking, and light staging.</p>
+        <a href="#book" class="btn primary">Book Cleaning</a>
+        <a href="#quote" class="btn secondary">Get a Custom Quote</a>
       </div>
       <div class="card">
         <h3>Laundry & Linen Services</h3>
-        <p>Hotel-grade linens or we clean yours. Fresh, folded, delivered.</p>
+        <p>Starting at AED 50 per booking</p>
+        <p>Hotel-grade linens or professional cleaning of yours. Fresh, folded, delivered.</p>
+        <a href="#book" class="btn primary">Book Linen Rental</a>
+        <a href="#book" class="btn secondary">Book Laundry Service</a>
       </div>
       <div class="card">
         <h3>Smart Lock & Key Management</h3>
-        <p>Secure handovers, remote guest access, emergency support.</p>
+        <p>Starting at AED 100 per booking</p>
+        <p>Secure handovers, smart lock setup, remote access, and emergency support.</p>
+        <a href="#book" class="btn primary">Book Key Management</a>
+        <a href="#book" class="btn secondary">Book Smart Lock</a>
+      </div>
+      <div class="card">
+        <h3>Guest Concierge Service</h3>
+        <p>Starting at AED 200 per booking</p>
+        <p>Seamless check-ins, 24/7 support, and personalized guest experiences.</p>
+        <a href="#book" class="btn primary">Book Concierge</a>
+        <a href="#quote" class="btn secondary">Get a Custom Quote</a>
       </div>
       <div class="card">
         <h3>Photography & Listing Optimization</h3>
-        <p>Stunning photos and SEO-optimized listings for more bookings.</p>
+        <p>Starting at AED 500 per booking</p>
+        <p>Professional photos and SEO-optimized listings to boost bookings.</p>
+        <a href="#book" class="btn primary">Book Photography</a>
+        <a href="#book" class="btn secondary">Book Optimization</a>
+      </div>
+      <div class="card">
+        <h3>Property Maintenance & Repairs</h3>
+        <p>Starting at AED 200 per booking</p>
+        <p>Routine checks, emergency repairs, and preventative maintenance.</p>
+        <a href="#book" class="btn primary">Request Repairs</a>
+        <a href="#book" class="btn secondary">Schedule Maintenance</a>
       </div>
     </div>
-    <a href="#book" class="btn primary" style="margin-top:2rem; display:block; text-align:center;">View All Services</a>
+    <h3 style="text-align: center; margin-top: 2rem;">Smart Bundles</h3>
+    <div class="service-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div class="card">
+        <h3>Listing Success Kit</h3>
+        <p>Photography + Listing Optimization</p>
+        <a href="#book" class="btn primary">Book Listing Success Kit</a>
+      </div>
+      <div class="card">
+        <h3>Fresh Stay Package</h3>
+        <p>Cleaning & Turnover + Laundry/Linen Rental</p>
+        <a href="#book" class="btn primary">Book Fresh Stay Package</a>
+      </div>
+      <div class="card">
+        <h3>Seamless Check-In Package</h3>
+        <p>Smart Lock Setup + Concierge Services</p>
+        <a href="#book" class="btn primary">Book Seamless Check-In Package</a>
+      </div>
+      <div class="card">
+        <h3>Guest Ready Kit</h3>
+        <p>Cleaning + Laundry/Linen + Key Management + Concierge + Welcome Gift</p>
+        <a href="#book" class="btn primary">Book Guest Ready Kit</a>
+      </div>
+    </div>
+    <a href="#book" class="btn primary" style="margin-top:2rem; display:block; text-align:center;">Bundle & Save Now</a>
+    <a href="#subscribe" class="btn secondary" style="margin-top:1rem; display:block; text-align:center;">Subscribe & Save</a>
   </section>
 
-  <section id="about" style="padding: 4rem 2rem; text-align:center; background-color:#eef2f7;">
+  <section id="how-it-works" style="padding: 4rem 2rem; text-align: center; background-color: #ffffff;">
+    <h2>How It Works</h2>
+    <p>Fast. Simple. Reliable.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div class="card">
+        <h3>1. Choose Your Service</h3>
+        <p>Cleaning, laundry, guest check-in, and more.</p>
+      </div>
+      <div class="card">
+        <h3>2. Schedule & Pay</h3>
+        <p>Secure, instant booking online.</p>
+      </div>
+      <div class="card">
+        <h3>3. Relax</h3>
+        <p>We handle the rest.</p>
+      </div>
+    </div>
+    <p>No Contracts. No Hidden Fees. Just Pay-As-You-Go.</p>
+    <a href="#services" class="btn primary">View Services</a>
+    <a href="#book" class="btn secondary">Book Now</a>
+  </section>
+
+  <section id="about" style="padding: 4rem 2rem; text-align: center; background-color: #eef2f7;">
     <h2>About Us</h2>
-    <p style="max-width: 800px; margin: auto;">We are Dubai’s most trusted Airbnb management service, helping homeowners generate passive income without lifting a finger. With a professional team and tech-driven systems, we ensure 5-star guest experiences and maximum ROI for property owners.</p>
+    <p style="max-width: 800px; margin: 1rem auto;">We believe hosting should be stress-free. Our mission is simple: to help short-term rental hosts maximize their earnings with minimal effort. From professional cleaning and guest-ready staging to seamless key handovers and concierge services, we make sure your property runs smoothly—so you don’t have to.</p>
+    <p style="max-width: 800px; margin: 1rem auto;">Reliable, on-demand, and designed specifically for Airbnb and vacation rental hosts. Trusted professionals, flexible pay-as-you-go model, and 24/7 customer support.</p>
+    <a href="#services" class="btn primary">Explore Services</a>
+    <a href="#quote" class="btn secondary">Get a Custom Quote</a>
   </section>
 
-  <section id="faq" style="padding: 4rem 2rem; text-align:center;">
+  <section id="faq" style="padding: 4rem 2rem; text-align: center;">
     <h2>Frequently Asked Questions</h2>
-    <p><strong>Q:</strong> Do you require a contract?<br><strong>A:</strong> No. We offer flexible, on-demand services without binding contracts.</p>
-    <p><strong>Q:</strong> Can I book same-day services?<br><strong>A:</strong> Yes, based on availability. We recommend booking 24 hours in advance.</p>
+    <div style="max-width: 800px; margin: auto; text-align: left;">
+      <p><strong>Q:</strong> What services do you offer?<br><strong>A:</strong> We provide cleaning, key management, concierge, laundry, photography, and maintenance for Airbnb and rentals.</p>
+      <p><strong>Q:</strong> Do you offer same-day services?<br><strong>A:</strong> Yes, based on availability. We recommend booking 24 hours in advance.</p>
+      <p><strong>Q:</strong> Can I reschedule or cancel my booking?<br><strong>A:</strong> Yes, reschedule up to 24 hours in advance at no cost. Cancellations within 24 hours may incur a fee.</p>
+      <p><strong>Q:</strong> What’s included in cleaning services?<br><strong>A:</strong> Full property cleaning, sanitization, bed-making, and restocking essentials.</p>
+      <p><strong>Q:</strong> Do you provide linens?<br><strong>A:</strong> Yes, we offer hotel-grade linen rentals or clean your own linens.</p>
+    </div>
+    <a href="#contact" class="btn primary" style="margin-top: 2rem;">Contact Support</a>
   </section>
 
-  <section id="book" style="padding: 4rem 2rem; text-align:center; background:#f0f5fb;">
+  <section id="book" style="padding: 4rem 2rem; text-align: center; background: #f0f5fb;">
     <h2>Book Our Services</h2>
-    <p>To book a service, simply contact us via email or WhatsApp and we’ll take care of the rest.</p>
+    <p>To book a service, simply contact us via email, WhatsApp, or our online form, and we’ll take care of the rest.</p>
     <a href="#contact" class="btn primary">Contact Now</a>
+    <a href="#consultation" class="btn secondary">Book a Free Consultation</a>
   </section>
 
   <section id="contact" class="contact-form">
     <h2>Send Us a Message</h2>
+    <p style="text-align: center;">Need help or a custom quote? Fill out the form or contact us directly.</p>
     <form id="contactForm">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="text" name="phone" placeholder="Phone Number (optional)">
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <label><input type="checkbox" name="newsletter" checked> Subscribe to our newsletter for updates and promotions</label>
       <button type="submit" class="btn primary">Send Message</button>
       <p id="formResponse"></p>
     </form>
+    <p style="text-align: center; margin-top: 1rem;">
+      <a href="https://wa.me/971XXXXXXXXX" class="btn secondary">Chat on WhatsApp</a>
+    </p>
   </section>
 
   <footer>
     <div class="footer-content">
       <div class="footer-links">
-        <a href="#terms">Terms & Conditions</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#booking">Booking & Payment Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/booking-policy.html">Booking & Payment Policy</a>
+        <a href="#faq">Quick FAQs</a>
+        <a href="#subscribe">Newsletter Signup</a>
       </div>
       <div class="footer-contact">
         <p>Email: support@airhavyn.com</p>
-        <p>Phone: +971-XXX-XXXXXX</p>
-        <p><a href="#faq">Quick FAQs</a> | <a href="#subscribe">Newsletter Signup</a></p>
-        <div class="badges">
-          <span class="badge">SSL Secured</span>
-          <span class="badge">PCI Compliant</span>
-          <span class="badge">GDPR Ready</span>
-          <span class="badge">Trusted by Hosts</span>
-        </div>
+        <p>Phone/WhatsApp: +971-XXX-XXXXXX</p>
+        <p>Operating Hours: 24/7 Support</p>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://wa.me/971XXXXXXXXX" target="_blank">WhatsApp</a>
+      </div>
+      <div class="trust-badges">
+        <span class="badge">SSL Secured</span>
+        <span class="badge">PCI Compliant</span>
+        <span class="badge">GDPR Ready</span>
+        <span class="badge">Trusted by Hosts</span>
       </div>
     </div>
   </footer>
