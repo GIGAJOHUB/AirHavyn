@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dubai’s Premier Airbnb & Short-Term Rental Services. No Contracts. No Revenue Sharing. Book now!" />
+  <title>Dubai Airbnb Hosting Services | No Contracts, On-Demand</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/main.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f8fa;
+      color: #333;
+    }
+    .navbar {
+      background-color: #1e2a38;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #7db3e7;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links li a,
+    .cta-buttons a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .nav-links li a:hover,
+    .cta-buttons a:hover {
+      color: #7db3e7;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-weight: 500;
+    }
+    .primary {
+      background-color: #337ab7;
+      color: white;
+    }
+    .primary:hover {
+      background-color: #286090;
+      transform: scale(1.05);
+    }
+    .secondary {
+      background-color: transparent;
+      color: #337ab7;
+      border: 2px solid #337ab7;
+    }
+    .secondary:hover {
+      background-color: #337ab7;
+      color: white;
+      transform: scale(1.05);
+    }
+    .card {
+      background-color: #eaf2fb;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .hero {
+      background: linear-gradient(to right, #e1ecf7, #ffffff);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #1e2a38;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .slideshow {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+    .slideshow img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: 400px;
+    }
+    .contact-form {
+      padding: 4rem 2rem;
+      background-color: #f0f5fb;
+    }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-form form {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    footer {
+      background-color: #1e2a38;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .footer-links a {
+      color: #7db3e7;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">AirHavyn</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cta-buttons">
+        <a href="#book" class="btn primary">Book Now</a>
+        <a href="quote.html" class="btn secondary">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Dubai’s Premier Short-Term Rental Service Partner</h1>
+      <p>Seamless hosting solutions for Airbnb hosts, vacation rentals, and serviced apartments. No contracts. No revenue sharing.</p>
+      <a href="#services" class="btn primary">View Services</a>
+      <a href="#book" class="btn secondary">Book Now</a>
+    </div>
+    <div class="slideshow">
+      <img src="https://source.unsplash.com/1600x600/?dubai,cityscape" alt="Dubai Apartment" />
+    </div>
+  </section>
+
+  <section id="services" class="services-preview" style="padding: 4rem 2rem;">
+    <h2 style="text-align: center;">Effortless Hosting, On Demand</h2>
+    <div class="service-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+      <div class="card">
+        <h3>Airbnb Cleaning & Turnover</h3>
+        <p>5-star cleaning, restocking essentials, guest-ready staging.</p>
+      </div>
+      <div class="card">
+        <h3>Laundry & Linen Services</h3>
+        <p>Hotel-grade linens or we clean yours. Fresh, folded, delivered.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Lock & Key Management</h3>
+        <p>Secure handovers, remote guest access, emergency support.</p>
+      </div>
+      <div class="card">
+        <h3>Photography & Listing Optimization</h3>
+        <p>Stunning photos and SEO-optimized listings for more bookings.</p>
+      </div>
+    </div>
+    <a href="#book" class="btn primary" style="margin-top:2rem; display:block; text-align:center;">View All Services</a>
+  </section>
+
+  <section id="about" style="padding: 4rem 2rem; text-align:center; background-color:#eef2f7;">
+    <h2>About Us</h2>
+    <p style="max-width: 800px; margin: auto;">We are Dubai’s most trusted Airbnb management service, helping homeowners generate passive income without lifting a finger. With a professional team and tech-driven systems, we ensure 5-star guest experiences and maximum ROI for property owners.</p>
+  </section>
+
+  <section id="faq" style="padding: 4rem 2rem; text-align:center;">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Q:</strong> Do you require a contract?<br><strong>A:</strong> No. We offer flexible, on-demand services without binding contracts.</p>
+    <p><strong>Q:</strong> Can I book same-day services?<br><strong>A:</strong> Yes, based on availability. We recommend booking 24 hours in advance.</p>
+  </section>
+
+  <section id="book" style="padding: 4rem 2rem; text-align:center; background:#f0f5fb;">
+    <h2>Book Our Services</h2>
+    <p>To book a service, simply contact us via email or WhatsApp and we’ll take care of the rest.</p>
+    <a href="#contact" class="btn primary">Contact Now</a>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number (optional)">
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="formResponse"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#booking">Booking & Payment Policy</a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: support@airhavyn.com</p>
+        <p>Phone: +971-XXX-XXXXXX</p>
+        <p><a href="#faq">Quick FAQs</a> | <a href="#subscribe">Newsletter Signup</a></p>
+        <div class="badges">
+          <span class="badge">SSL Secured</span>
+          <span class="badge">PCI Compliant</span>
+          <span class="badge">GDPR Ready</span>
+          <span class="badge">Trusted by Hosts</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
